@@ -92,3 +92,24 @@ L'application permet à l'utilisateur de charger une image contenant un chiffre 
 <img width="330" height="185" alt="pred4" src="https://github.com/user-attachments/assets/f1911bc3-b5f9-470c-9c8f-8dff954f3e3f" />
 
 ---
+
+
+##  Limites et améliorations possibles
+
+###  Limites actuelles
+
+| Problème                            | Description                                                                                  |
+|-----------------------------------|----------------------------------------------------------------------------------------------|
+| Sensibilité à l'éclairage          | Des images mal éclairées (ombres, reflets) peuvent perturber la précision des prédictions.  |
+| Format non standard                | Le modèle attend des images 28x28 pixels en niveaux de gris ; les formats différents nécessitent un prétraitement. |
+| Mauvaise prédiction pour certains chiffres | Le chiffre **0** peut être mal reconnu s’il est mal écrit ou trop ovale.                    |
+
+###  Améliorations possibles
+
+- **Augmentation des données** : Entraîner le modèle avec des images augmentées (variations d’éclairage, rotation, bruit) pour une meilleure robustesse.
+- **Meilleur prétraitement d’image** : Ajouter un traitement adaptatif pour corriger l’éclairage et normaliser les images externes avant la prédiction.
+- **Architecture plus profonde** : Tester des architectures plus complexes ou des variantes de ResNet pour améliorer la précision.
+- **Multi-canal couleur** : Entraîner et prédire aussi sur des images RGB pour mieux gérer les images colorées.
+- **Interface utilisateur améliorée** : Ajouter des fonctionnalités pour corriger automatiquement l’orientation ou la qualité des images uploadées.
+
+---
