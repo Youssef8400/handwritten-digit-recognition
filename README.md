@@ -5,6 +5,25 @@ Le modèle est construit à l'aide de **TensorFlow/Keras** et atteint une préci
 
 ---
 
+##  Installation et utilisation : 
+
+1. Installer les dépendances :
+```bash
+pip install -r requirements.txt
+```
+
+2. Entraîner le modèle :
+```bash
+python model.py
+```
+
+3. Lancer l'application de prédiction :
+```bash
+python deploiement.py
+```
+
+---
+
 ## Dataset
 
 - **MNIST** : 60 000 images pour l'entraînement, 10 000 pour le test
